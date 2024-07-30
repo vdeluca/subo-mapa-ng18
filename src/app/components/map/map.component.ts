@@ -153,4 +153,12 @@ export class MapComponent {
     // End Marker
     const endMarker = new Marker(this._endLatLng, { icon: iconDefault } ).addTo(this._map);
   }
+
+  /**
+   * [TODO]
+   * Recibe nuevamente el startCoords y el endCoords para rehacer la ruta.
+   */
+  private resetMap(){
+    this._map.removeLayer(this._routeLayer);
+  }
 }

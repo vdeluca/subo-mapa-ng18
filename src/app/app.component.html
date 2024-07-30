@@ -1,7 +1,13 @@
+<!--
+    Agregar los siguientes bindings
+    - currentLocation: Coordenadas actuales del usuario
+    - serviceLocation: Coordenadas del servicio, auto, camioneta, lo que fuera
+    - coordenadas del viaje.
+-->
 <app-map [startCoords]="[-31.36599294118278, -64.19630052559887]" 
          [endCoords]="[-31.449220210926033, -64.19210559957588]"
          (previajeInfo)="broadcastPreviajeInfo($event)"
-         (mapObject)="catchMapObject($event)"
+         (mapObject)="catchMapObject($event)"         
          >
 </app-map>
 <app-duration [durationValue]="(estimatedTime$ | async) || ''" position='topright' #duration></app-duration>
