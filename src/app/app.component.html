@@ -1,0 +1,9 @@
+<app-map [startCoords]="[-31.36599294118278, -64.19630052559887]" 
+         [endCoords]="[-31.449220210926033, -64.19210559957588]"
+         (previajeInfo)="broadcastPreviajeInfo($event)"
+         (mapObject)="catchMapObject($event)"
+         >
+</app-map>
+<app-duration [durationValue]="(estimatedTime$ | async) || ''" position='topright' #duration></app-duration>
+<app-distance [distanceValue]="(estimatedDistance$ | async) || ''" position='topright' #distance></app-distance>
+<app-fare [fareValue]="(estimatedFare$ | async) || ''" position='topright' #fare></app-fare>

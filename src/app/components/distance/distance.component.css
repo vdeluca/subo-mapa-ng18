@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    border: 2px solid rgba(6, 15, 50, 0.5); /* Borde con color #060F32 y transparencia */
+    border-radius: 10px;
+    background-color: rgba(6, 15, 50, 0.2); /* Fondo con color #060F32 y transparencia */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #060F32; /* Color del texto del título */
+    text-shadow: 1px 1px 2px #fff; /* Borde blanco al texto */
+  }
+  
+  .distance {
+    font-weight: bold;
+    font-size: 18px;
+    color: #060F32; /* Color del texto de la duración */
+    text-shadow: 1px 1px 2px #fff; /* Borde blanco al texto */
+  }
+  
